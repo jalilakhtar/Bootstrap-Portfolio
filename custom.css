@@ -1,0 +1,72 @@
+ body {
+ 	background: url("images/concrete_seamless.png");
+ }
+ .navbar-brand {
+ 	font-family: Georgia, Times, "Times New Roman", serif;
+ 	font-size: 30px;
+ 	font-weight: 700;
+ 	color: #fff;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	background: #4aaaa5;
+ 	margin-left: 20px;
+ }   
+ .navbar-right {
+ 	margin-right: 20px;
+ }
+ \**
+ .SectionAboutMe {
+ 	margin-left: 20px;
+ 	background: #fff;
+ 	padding-bottom: 20px;
+ }
+ .auth-image {
+ 	width:100%;
+ }
+ .SectionConnectMe{
+ 	background: #fff;
+ 	margin-left: 2%;
+ 	padding-bottom: 30px;
+ }
+ .media-body {
+ 	display:block;
+ }
+ .SectionConnectMe img {
+ 	width: 70px;
+ }
+ .text-green {
+ 	color: #4aaaa5;
+ }
+ .heading h1,.heading h3 {
+ 	border-bottom: 2px solid #ccc;
+ 	padding: 0px 0px 20px 0px;
+ }
+ .thumbnail {
+ 	border:none;
+ }
+ .caption p {
+ 	letter-spacing: 0.5px;
+ 	line-height: 23px;
+
+ }
+ .main {
+ 	padding-left:0;
+ 	padding-right: 0;
+ }
+ footer {
+ 	background: #464545;
+ 	color: #fff;
+ 	padding: 37px 0px 33px 0px;
+ 	border-top: 7px solid #4aaaa5;
+ 	margin-top: 30px;
+ }
+ @media screen and  (max-width:980px) {
+ 	.SectionConnectMe img {
+ 		width: 68px;
+ 		padding: 2px;
+ 	}
+ }
+ .innercol {
+ 	padding-right: 0px !important;
+ }
+ 
