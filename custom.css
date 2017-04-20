@@ -1,5 +1,6 @@
  body {
  	background: url("images/concrete_seamless.png");
+ 	overflow-x: hidden !important;
  }
  .navbar-brand {
  	font-family: Georgia, Times, "Times New Roman", serif;
@@ -10,39 +11,45 @@
  	text-decoration: none;
  	background: #4aaaa5;
  	margin-left: 20px;
- }   
- .navbar-right {
- 	margin-right: 20px;
  }
- \**
+
+.container {
+	width: auto !important;
+}
+
+ .navbar-right {
+ 	margin-right: 52px !important;
+ }
  .SectionAboutMe {
- 	margin-left: 20px;
  	background: #fff;
  	padding-bottom: 20px;
  }
  .auth-image {
  	width:100%;
  }
- .SectionConnectMe{
+ .SectionConnectWithMe{
  	background: #fff;
- 	margin-left: 2%;
  	padding-bottom: 30px;
+ 	border-left: 34px solid rgb(239, 239, 239);
  }
  .media-body {
  	display:block;
  }
- .SectionConnectMe img {
+ .SectionConnectWithMe img {
  	width: 70px;
  }
  .text-green {
  	color: #4aaaa5;
+ }
+ .text-white {
+ 	color:#fff !important;
  }
  .heading h1,.heading h3 {
  	border-bottom: 2px solid #ccc;
  	padding: 0px 0px 20px 0px;
  }
  .thumbnail {
- 	border:none;
+ 	border:none !important;
  }
  .caption p {
  	letter-spacing: 0.5px;
@@ -50,9 +57,101 @@
 
  }
  .main {
- 	padding-left:0;
- 	padding-right: 0;
+ 	padding-left:0 !important;
+ 	padding-right: 0 !important;
  }
+
+ /* insert start for styling Contact.html */
+
+ #contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 60%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
+
+/* insert end for styling Contact.html*/
+
+/* insert start for styling Porfolio images */
+/* portfolio page */
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.work:nth-child {
+  margin-right: 40px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+.auth-image {
+  float: left;
+  /*width: 200px;*/
+  width: 465px !important;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+  /* new entry */
+  padding-bottom: 20px;
+  /*margin-bottom: 10px;*/
+}
+/* until here*/
  footer {
  	background: #464545;
  	color: #fff;
@@ -60,6 +159,11 @@
  	border-top: 7px solid #4aaaa5;
  	margin-top: 30px;
  }
+ footer > .row {
+ 	margin-left:0 !important;
+ 	margin-right: 0 !important;
+ }
+
  @media screen and  (max-width:980px) {
  	.SectionConnectMe img {
  		width: 68px;
@@ -68,5 +172,88 @@
  }
  .innercol {
  	padding-right: 0px !important;
+ } 
+ .navheader {
+ 	margin-left: 47px;
  }
- 
+ .work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.main-selection {
+	width: 80%;
+}
+
+ @media screen and (max-width:640px) {
+ 	.navbar-toggle {
+ 		display:none;
+ 	}
+ 	.navheader {
+ 		margin:0;
+ 	}
+ 	.navbar-brand {
+ 		width:100%;
+ 		margin:0;
+ 	}
+ 	.navbar-collapse {
+ 		display:block !important;
+ 	}
+ 	.navbar-right {
+ 		margin-right: 0 !important;
+ 	}
+ 	.nav > li {
+ 		display: inline-flex !important;
+ 		width:32%;
+ 	}
+ 	.navbar-default .navbar-nav>li>a {
+ 		display: block;
+ 		text-align: center;
+ 		width: 100%;
+ 	}
+ 	.content {
+ 		padding: 15px 40px 15px 40px;
+ 	}
+ 	.SectionConnectWithMe {
+ 		border: none;
+    	margin-top: 40px;
+ 	}
+ 	.heading {
+ 		text-align:left !important;
+ 	}
+ }
+
+ @media screen and (min-width: 641px) and (max-width:768px) {
+ 	.navheader {
+ 		margin-left:17px;
+ 	}
+ 	.navbar-brand,.navbar-right {
+ 		margin:0 !important;
+ 	}
+ 	.SectionAboutMe {
+ 		width:100% !important;
+ 	}
+ 	.SectionConnectWithMe {
+ 		width:100% !important;
+ 		border: none;
+    	margin-top: 40px;
+ 	}
+ 	.content {
+ 		padding: 15px 30px 15px 30px;
+ 	}
+ 	.auth-image {
+ 		width: 330px;
+    	float: left;
+    	padding-right: 19px;
+ 	}
+ 	.caption p {
+ 		letter-spacing: 1px;
+    	line-height: 32px;
+ 	}
+ 	.heading {
+ 		text-align:left !important;
+ 	}
+ }
+
